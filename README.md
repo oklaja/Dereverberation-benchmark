@@ -12,5 +12,7 @@ At this point only the prototyping notebook is added. Check later for scripts, a
 We achieved best results with an architecture similar to that used for a separation of audio sources (e.g. voice, guitar, bass, drums) from songs:
 https://arxiv.org/pdf/1903.01415.pdf
 
+Concisely, network predicts a 'mask' matrix which is than multiplied with an Short Time Fourier Transform (STFT) of an input audio (with reverb) and converted back to audio by inverse STFT.  
+
 ![a](./results.png)
 
